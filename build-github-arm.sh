@@ -27,7 +27,7 @@ mkdir -p $deb_dir
 
 function InstallDepends() {
     echo '开始安装依赖'
-    apt-get --yes install git devscripts equivs triehash libdb*.*-dev liblz4-dev liblzma-dev libzstd-dev libseccomp-dev libgcrypt*-dev libxxhash-dev
+    apt-get --yes install git devscripts equivs triehash libdb*.*-dev liblz4-dev liblzma-dev libzstd-dev libseccomp-dev libgcrypt*-dev libxxhash-dev doxygen libgtest-dev libgnutls28-dev
     rm -rfv LingmoOSBuildDeps
     git clone https://github.com/LingmoOS/LingmoOSBuildDeps.git
     cd LingmoOSBuildDeps
